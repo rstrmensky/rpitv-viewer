@@ -10,4 +10,8 @@ composer.phar
 # Mac DS_Store Files
 .DS_Store
 
+# project files
+/media
+config.json
+playlist.csv
 readme.txt
