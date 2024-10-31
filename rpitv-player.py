@@ -59,7 +59,7 @@ def main_loop():
                     print(f"Displaying video: {media['file_path']}")
                     display_video(media["file_path"])
                 elif media["media_type"] == "image":
-                    if pygame.display.get_init() == False:
+                    if not pygame.display.get_init():
                         screen = display_init()
 
                     print(f"Displaying image: {media['file_path']} for {media['display_time']} seconds")

@@ -22,7 +22,7 @@ echo "Creating systemd service..."
 sudo bash -c 'cat > /etc/systemd/system/rpitv.service <<EOF
 [Unit]
 Description=RPiTV Service
-After=network.target
+After=multi-user.target
 
 [Service]
 ExecStart=/usr/bin/python3 /home/pi/rpitv-viewer/main.py
