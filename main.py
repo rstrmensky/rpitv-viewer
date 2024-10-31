@@ -4,14 +4,14 @@ import subprocess
 # Function to run the playlist update script
 def run_playlist():
     try:
-        subprocess.run(["python3", "rpi-playlist.py"])
+        subprocess.run(["python3", "rpitv-playlist.py"])
     except subprocess.CalledProcessError as e:
         print(f"Error running playlist update: {e}")
 
 # Function to start the player process
 def run_player():
     try:
-        player_process = subprocess.Popen(["python3", "rpi-player.py"])
+        player_process = subprocess.Popen(["python3", "rpitv-player.py"])
         return player_process
     except Exception as e:
         print(f"Error starting player process: {e}")

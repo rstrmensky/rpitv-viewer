@@ -12,6 +12,5 @@ composer.phar
 
 # project files
 /media
-config.json
 playlist.csv
 readme.txt
